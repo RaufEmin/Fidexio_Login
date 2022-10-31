@@ -18,7 +18,8 @@ public class LogOut {
     public WebElement Logout;
 
 
-
+    @FindBy(xpath = "//h4[@class='modal-title']")
+     public  WebElement OddoMessage;
 
 
 }
