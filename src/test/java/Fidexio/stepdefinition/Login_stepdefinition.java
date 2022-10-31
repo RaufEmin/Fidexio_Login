@@ -82,6 +82,7 @@ public class Login_stepdefinition {
 
     @Then("user  is on the home page")
     public void userIsOnTheHomePage() {
+
         Assert.assertTrue(loginPage.userId.isDisplayed());
     }
 }
