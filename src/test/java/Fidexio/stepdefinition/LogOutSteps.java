@@ -55,11 +55,12 @@ public class LogOutSteps {
 
     @Then("user can not go to the homepage again")
     public void userCanNotGoToTheHomepageAgain() {
-      // String ExpectedUrl="https://qa.fidexio.com/web/login";
-
-        //Assert.assertTrue(Driver.getDriver().getCurrentUrl().equalsIgnoreCase(ExpectedUrl));
 
 
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("fidexio"));
+
+
+        /*
        // String expectedMessage = "Odoo Session Expired";
         String actualMessage=Driver.getDriver().getTitle();
         String expectedMesage="Odoo Session Expired";
@@ -68,6 +69,8 @@ public class LogOutSteps {
         }else {
             System.out.println("Test No Pass");
         }
+
+         */
 
     }
 }
